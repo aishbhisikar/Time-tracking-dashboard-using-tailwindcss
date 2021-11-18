@@ -1,80 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Time tracking dashboard</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
 <body>
+<!--class="container max-h-full bg-indigo-900"-->
+<main class="text-2xl bg-gray-900 font-extralight text-white min-h-screen flex flex-col items-center pt-20 space-y-10">
+    <section class="rounded-3xl w-5/6 bg-indigo-900">
+        <div class="rounded-3xl p-10 flex justify-between bg-indigo-700">
+            <img class="ring-4 ring-white rounded-full h-2/6 w-2/6 " src="images/image-jeremy.png" alt="jeremy">
+            <div>
+                <p class="text-gray-400 text-xl font-normal">Reported for</p>
+                <p class="text-4xl">Jeremy Robson</p>
+            </div>
+        </div>
+        <div class="flex justify-evenly m-10">
+            <a class="text-4xl" href="#">Daily</a>
+            <a class="text-4xl" href="#">Weekly</a>
+            <a class="text-4xl" href="#">Monthly</a>
+        </div>
+    </section>
 
-  Report for
-  Jeremy Robson
+    <section class="rounded-3xl w-5/6 bg-yellow-500 p-0 relative">
+        <img class="absolute-top-0 right-0 z-0" src="images/icon-work.svg">
+        <div class="relative flex p-10 z-10 bg-indigo-900 justify-between rounded-3xl">
+            <div class="justify-end flex flex-col">
+                <h2 class="font-bold">Work</h2>
+                <p class="text-3xl">32 hrs</p>
+            </div>
+            <div class="justify-around flex flex-col">
+                <img class="self-end h-1.5" src="images/icon-ellipsis.svg">
+                <p class="text-gray-400 font-light"> Yesterday - 36hrs</p>
 
-  Daily
-  Weekly
-  Monthly
+            </div>
+        </div>
+    </section>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+    <section class="rounded-3xl w-5/6 bg-blue-500 p-0 relative">
+        <img class="absolute-top-0 right-0 z-0" src="images/icon-play.svg">
+        <div class="relative flex p-10 z-10 bg-indigo-900 justify-between rounded-3xl">
+            <div class="justify-end flex flex-col">
+                <h2 class="font-bold">Play</h2>
+                <p class="text-3xl">10 hrs</p>
+            </div>
+            <div class="justify-around flex flex-col">
+                <img class="self-end h-1.5" src="images/icon-ellipsis.svg">
+                <p class="text-gray-400 font-light"> Last Week - 8hrs</p>
+            </div>
+        </div>
+    </section>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    <section class="rounded-3xl w-5/6 bg-pink-500 p-0 relative">
+        <img class="absolute-top-0 right-0 z-0" src="images/icon-study.svg">
+        <div class="relative flex p-10 z-10 bg-indigo-900 justify-between rounded-3xl">
+            <div class="justify-end flex flex-col">
+                <h2 class="font-bold">Study</h2>
+                <p class="text-3xl">4 hrs</p>
+            </div>
+            <div class="justify-around flex flex-col">
+                <img class="self-end h-1.5" src="images/icon-ellipsis.svg">
+                <p class="text-gray-400 font-light"> Last Week - 7hrs</p>
+            </div>
+        </div>
+    </section>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+    <section class="rounded-3xl w-5/6 bg-green-300 p-0 relative">
+        <img class="absolute-top-0 right-0 z-0" src="images/icon-exercise.svg">
+        <div class="relative flex p-10 z-10 bg-indigo-900 justify-between rounded-3xl">
+            <div class="justify-end flex flex-col">
+                <h2 class="font-bold">Exercise</h2>
+                <p class="text-3xl">4 hrs</p>
+            </div>
+            <div class="justify-around flex flex-col">
+                <img class="self-end h-1.5" src="images/icon-ellipsis.svg">
+                <p class="text-gray-400 font-light"> Last Week - 5hrs</p>
+            </div>
+        </div>
+    </section>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+    <section class="rounded-3xl w-5/6 bg-purple-600 p-0 relative">
+        <img class="absolute-top-0 right-0 z-0" src="images/icon-social.svg">
+        <div class="relative flex p-10 z-10 bg-indigo-900 justify-between rounded-3xl">
+            <div class="justify-end flex flex-col">
+                <h2 class="font-bold">Social</h2>
+                <p class="text-3xl">5 hrs</p>
+            </div>
+            <div class="justify-around flex flex-col">
+                <img class="self-end h-1.5" src="images/icon-ellipsis.svg">
+                <p class="text-gray-400 font-light"> Last Week - 10hrs</p>
+            </div>
+        </div>
+    </section>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <section class="rounded-3xl w-5/6 bg-yellow-300 p-0 relative">
+        <img class="absolute-top-0 right-0 z-0" src="images/icon-self-care.svg">
+        <div class="relative flex p-10 z-10 bg-indigo-900 justify-between rounded-3xl">
+            <div class="justify-end flex flex-col">
+                <h2 class="font-bold">Self Care</h2>
+                <p class="text-3xl">2 hrs</p>
+            </div>
+            <div class="justify-around flex flex-col">
+                <img class="self-end h-1.5" src="images/icon-ellipsis.svg">
+                <p class="text-gray-400 font-light"> Last Week - 2hrs</p>
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>
